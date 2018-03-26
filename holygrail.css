@@ -3,12 +3,15 @@ body{
 }
 main{
   /* display: */
+  display:flex;
 }
 .content{
   /* flex-grow: */
+  flex-grow:2;
 }
 aside{
   /* order: */
+  order: 2;
 }
 
 main>*{
@@ -30,6 +33,7 @@ nav, aside{
 @media screen and (max-width: 620px){
   main{
     /* flex-direction: */
+    flex-direction:column;
   }
   main>*:not(:nth-child(1)){
     margin-left:10px;
@@ -37,9 +41,11 @@ nav, aside{
   }
   nav{
     /* order: */
+    order:1;
   }
   aside{
     /* order: */
+    order:3;
   }
   nav ul{
     text-align:center;
